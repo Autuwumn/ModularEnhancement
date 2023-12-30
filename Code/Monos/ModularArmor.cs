@@ -10,6 +10,7 @@ using UnboundLib;
 using UnityEngine;
 using ME.Extensions;
 using System.Collections;
+using System.Data;
 
 namespace ME.Monos
 {
@@ -184,6 +185,12 @@ namespace ME.Monos
                 var cursY = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).y;
                 var cursPos = new Vector3(cursX, cursY, player.transform.position.z);
                 var bounds = new Vector3(6.25f, 45f, 0);
+                var remaining = 0;
+                foreach(var m in mods)
+                {
+                    if (m == 0) remaining++;
+                }
+                modularDisplay.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Modules Left: " + remaining;
                 foreach (var go in modObjs)
                 {
                     var cur = Input.mousePosition;

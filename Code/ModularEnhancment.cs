@@ -4,7 +4,6 @@ using Jotunn.Utils;
 using ME.Cards;
 using ME.Monos;
 using ModsPlus;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,15 +11,8 @@ using System.Reflection;
 using UnboundLib.Cards;
 using UnboundLib.GameModes;
 using UnityEngine;
-using RarityLib.Utils;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-using ModdingUtils.MonoBehaviours;
-using System.Numerics;
-using UnityEngine.Experimental.PlayerLoop;
-using System.Net.Http.Headers;
-using TMPro;
 using UnboundLib;
-using WillsWackyManagers.Utils;
 
 namespace ME
 {
